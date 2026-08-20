@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Andre's Portfolio</title>
+        <meta name="description" content="Technical Portfolio of Andre">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div id="custom-cursor"></div>
+        <canvas id="grid-bg"></canvas>
+        <header>
+            
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <a href="#hero" class="logo-wrap">
+            <div class="panel-tint"></div>
+            <div class="panel-shine"></div>
+            <div class="logo-stars">
+                <span class="star" style="top:20%; left:15%; animation-delay:0s;"></span>
+                <span class="star" style="top:60%; left:30%; animation-delay:0.4s;"></span>
+                <span class="star" style="top:35%; left:55%; animation-delay:0.8s;"></span>
+                <span class="star" style="top:70%; left:75%; animation-delay:1.2s;"></span>
+                <span class="star" style="top:15%; left:80%; animation-delay:1.6s;"></span>
+                <span class="star" style="top:50%; left:90%; animation-delay:0.2s;"></span>
+            </div>
+            <span class="logo-text">an<span class="logo-dot">dev</span></span>
+        </a>
+        <a href="resume.pdf" download class="resume-download" data-name="Download Resume">
+            <i class="fa-solid fa-download"></i>
+        </a>
+        <main>
+            <section id="hero">
+                <h1>
+                    <span id="typewriter">Hi</span>, I'm
+                    <span class="scramble-word" aria-label="André">
+                        <span style="--i:0">A</span><span style="--i:1">n</span><span style="--i:2">d</span><span style="--i:3">r</span><span style="--i:4">é.</span>
+                    </span>
+                </h1>
+                <p>Full-stack developer who turns logic into building clean, functional software from backend to browser.</p>
+            </section>
+
+            <section id="about">
+                <div class="section-panel fade-in">
+                    <div class="about-top">
+                        <div class="about-photo-wrap" id="about-photo">
+                            <img src="images/andre.jpg" alt="André" class="about-photo">
+                        </div>
+                        <div class="about-text">
+                            <h2>About Me</h2>
+                            <h3>This is me.</h3>
+                            <p class="about-intro">A full-stack developer based in the Philippines, fresh out of the Polytechnic University of the Philippines with a 1.22 GWA and four straight years on the President's List. I like turning messy requirements into clean, working software.</p>
+                            <p class="about-intro fade-line" style="transition-delay: 0.1s">...</p>
+                            <h3 class="fade-line" style="transition-delay: 0.25s">I'm Ron Andre Bulagao.</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion" id="about-accordion">
+
+                        <div class="accordion-item">
+                            <button class="accordion-trigger" aria-expanded="false">
+                                <span class="fill-text">Education</span>
+                            </button>
+                            <div class="accordion-panel">
+                                <div class="accordion-panel-inner">
+                                    <h4>Polytechnic University of the Philippines</h4>
+                                    <p class="timeline-company">Bachelor of Science in Information Technology | 2021 – 2025</p>
+                                    <ul>
+                                        <li>Honors: Graduated Magna Cum Laude (1.22 GWA)</li>
+                                        <li>Awards: President's Lister Awardee (All Academic Years 2021–2025)</li>
+                                        <li>Scholarship: Department of Science and Technology (DOST–SEI JLSS Scholar)</li>
+                                        <li>Core Systems Focus: Relational Database Design (SQL), Object-Oriented Programming (OOP), Systems Analysis and Design, Software Engineering (SDLC)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-trigger" aria-expanded="false">
+                                <span class="fill-text">Professional Experience</span>
+                            </button>
+                            <div class="accordion-panel">
+                                <div class="accordion-panel-inner">
+                                    <h4>Software Developer (Internship)</h4>
+                                    <p class="timeline-company">PGX Group Inc. — Ortigas, San Juan City | Feb 2025 – Jun 2025</p>
+                                    <ul>
+                                        <li>Integrated RESTful APIs with Firebase services to support reliable data synchronization and application functionality.</li>
+                                        <li>Performed software testing, debugging, and issue resolution to improve application stability, functionality, and user experience.</li>
+                                        <li>Collaborated actively within an Agile development team throughout the full SDLC, participating in sprint ceremonies and technical reviews.</li>
+                                        <li>Developed cross-platform business application features using Flutter, ensuring precise translation of system functional requirements into production-ready software.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-trigger" aria-expanded="false">
+                                <span class="fill-text">Technical Certifications</span>
+                            </button>
+                            <div class="accordion-panel">
+                                <div class="accordion-panel-inner">
+                                    <ul>
+                                        <li>SQL (Basic) Certified – HackerRank (April 2026)</li>
+                                        <li>Claude API: Prompt Engineering & Agentic Workflows | 2026</li>
+                                        <li>Problem Solving (Basic) Certified – HackerRank (April 2026)</li>
+                                        <li>Microsoft Azure Fundamentals (AZ-900) – Coursework Completed via Microsoft Learn (April 2026)</li>
+                                        <li>Cybersecurity Fundamentals – ISC2 (2024)</li>
+                                        <li>JavaScript Essentials & Data Structures – Udemy / FreeCodeCamp (2026)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-trigger" aria-expanded="false">
+                                <span class="fill-text">Leadership and Organization Activities</span>
+                            </button>
+                            <div class="accordion-panel">
+                                <div class="accordion-panel-inner">
+                                    <ul>
+                                        <li>AWS Cloud Club – PUP Manila | Active Member | Nov 2024 – Present</li>
+                                        <li>PUP The Programmers' Guild | Active Member | 2021 – 2025</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </section>
+
+            <div class="about-overlay" id="about-overlay" aria-hidden="true">
+                <div class="about-overlay-backdrop"></div>
+                <div class="about-overlay-panel">
+                    <button class="about-overlay-close" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="about-overlay-content" id="about-overlay-content"></div>
+                </div>
+            </div>
+
+            <section id="skills">
+                    <h2>Skills</h2>
+
+                    <div class="category-card">
+                        <h3 class="skills-subhead">Languages & Frameworks</h3>
+                        <div class="icon-row">
+                            <i class="devicon-csharp-plain icon-item" data-name="C#"></i>
+                            <i class="devicon-cplusplus-plain icon-item" data-name="C++"></i>
+                            <i class="devicon-java-plain icon-item" data-name="Java"></i>
+                            <i class="devicon-python-plain icon-item" data-name="Python"></i>
+                            <i class="devicon-javascript-plain icon-item" data-name="JavaScript"></i>
+                            <i class="devicon-react-original icon-item" data-name="React"></i>
+                            <i class="devicon-nodejs-plain icon-item" data-name="Node.js"></i>
+                            <i class="devicon-flutter-plain icon-item" data-name="Flutter"></i>
+                            <i class="devicon-html5-plain icon-item" data-name="HTML5"></i>
+                            <i class="devicon-css3-plain icon-item" data-name="CSS3"></i>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <h3 class="skills-subhead">Databases</h3>
+                        <div class="icon-row">
+                            <i class="devicon-postgresql-plain icon-item" data-name="PostgreSQL"></i>
+                            <i class="devicon-microsoftsqlserver-plain icon-item" data-name="MS SQL Server"></i>
+                            <i class="devicon-oracle-original icon-item" data-name="Oracle DB"></i>
+                            <span class="badge-card"><span>SQL</span></span>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <h3 class="skills-subhead">Cloud & Tools</h3>
+                        <div class="icon-row">
+                            <i class="devicon-git-plain icon-item" data-name="Git"></i>
+                            <i class="devicon-github-original icon-item" data-name="GitHub"></i>
+                            <i class="devicon-firebase-plain icon-item" data-name="Firebase"></i>
+                            <i class="devicon-docker-plain icon-item" data-name="Docker"></i>
+                            <i class="devicon-azure-plain icon-item" data-name="Azure"></i>
+                            <i class="devicon-postman-plain icon-item" data-name="Postman"></i>
+                            <i class="devicon-selenium-original icon-item" data-name="Selenium"></i>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <h3 class="skills-subhead">Concepts & Practices</h3>
+                        <div class="icon-row">
+                            <span class="badge-card"><span>OOP</span></span>
+                            <span class="badge-card"><span>Data Structures & Algorithms</span></span>
+                            <span class="badge-card"><span>REST APIs</span></span>
+                            <span class="badge-card"><span>Design Patterns</span></span>
+                            <span class="badge-card"><span>Debugging</span></span>
+                            <span class="badge-card"><span>Software Testing</span></span>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <h3 class="skills-subhead">AI & Automation</h3>
+                        <div class="icon-row">
+                            <span class="badge-card"><span>Claude API</span></span>
+                            <span class="badge-card"><span>n8n</span></span>
+                            <span class="badge-card"><span>Prompt Engineering</span></span>
+                            <span class="badge-card"><span>Agentic Workflows</span></span>
+                            <span class="badge-card"><span>Webhooks & Payload Parsing</span></span>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="projects">
+                <div class="projects-showroom">
+                    <div class="projects-header">
+                        <span class="pill-label">Projects I've Made</span>
+                        <p class="projects-subtitle">Featured work and side projects</p>
+                    </div>
+
+                    <div class="carousel-wrap">
+                        <button class="carousel-arrow carousel-arrow--prev" aria-label="Previous project"><i class="fa-solid fa-chevron-left"></i></button>
+
+                        <div class="carousel-track" id="projects-track">
+
+                            <article class="carousel-card">
+                                <div class="card-flip-inner">
+                                    <div class="card-face card-face-front">
+                                        <div class="carousel-card-media media-tbk">
+                                            <img src="images/tbk.jpg" alt="Tyson Bully Kennel Platform preview">
+                                        </div>
+                                        <button class="card-info-btn" aria-label="Show project details"><i class="fa-solid fa-circle-info"></i></button>
+                                        <div class="carousel-card-overlay">
+                                            <span class="carousel-card-tag">In Progress</span>
+                                            <h3>Tyson Bully Kennel (TBK) Platform</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-face card-face-back">
+                                        <button class="card-info-btn card-info-btn--back" aria-label="Back to project image"><i class="fa-solid fa-rotate-left"></i></button>
+                                        <h3>Tyson Bully Kennel (TBK) Platform</h3>
+                                        <p class="card-back-desc">A business website prototype with an AI-powered customer support workflow using n8n and Claude API.</p>
+                                        <div class="card-back-tags">
+                                            <span>n8n</span><span>Claude API</span><span>Webhooks</span>
+                                        </div>
+                                        <a href="#" target="_blank" class="card-back-link"><i class="fa-solid fa-arrow-up-right-from-square"></i>Link not available</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="carousel-card">
+                                <div class="card-flip-inner">
+                                    <div class="card-face card-face-front">
+                                        <div class="carousel-card-media media-recode">
+                                            <img src="images/recode-zero.jpg" alt="Recode: Zero preview">
+                                        </div>
+                                        <button class="card-info-btn" aria-label="Show project details"><i class="fa-solid fa-circle-info"></i></button>
+                                        <div class="carousel-card-overlay">
+                                            <span class="carousel-card-tag">Completed</span>
+                                            <h3>Recode:Zero</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-face card-face-back">
+                                        <button class="card-info-btn card-info-btn--back" aria-label="Back to project image"><i class="fa-solid fa-rotate-left"></i></button>
+                                        <h3>Recode: Zero</h3>
+                                        <p class="card-back-desc">University capstone — an educational game built in Unity for teaching programming concepts in Java and Python. </p>
+                                        <div class="card-back-tags">
+                                            <span>Unity</span><span>Java</span><span>Python</span>
+                                        </div>
+                                        <a href="https://javathon.itch.io/recodezero3d" target="_blank" class="card-back-link"><i class="fa-solid fa-arrow-up-right-from-square"></i>View Link</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="carousel-card">
+                                <div class="card-flip-inner">
+                                    <div class="card-face card-face-front">
+                                        <div class="carousel-card-media media-idhub">
+                                            <img src="images/idhub.jpg" alt="Student ID Hub preview">
+                                        </div>
+                                        <button class="card-info-btn" aria-label="Show project details"><i class="fa-solid fa-circle-info"></i></button>
+                                        <div class="carousel-card-overlay">
+                                            <span class="carousel-card-tag">Completed</span>
+                                            <h3>Student ID Hub</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-face card-face-back">
+                                        <button class="card-info-btn card-info-btn--back" aria-label="Back to project image"><i class="fa-solid fa-rotate-left"></i></button>
+                                        <h3>Student ID Hub</h3>
+                                        <p class="card-back-desc">A web-based automation portal for managing student ID registration and issuing digital IDs.</p>
+                                        <div class="card-back-tags">
+                                            <span>Web App</span><span>Automation</span>
+                                        </div>
+                                        <a href="https://github.com/Rdreii/webdevfinals" target="_blank" class="card-back-link"><i class="fa-brands fa-github"></i> View on GitHub</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="carousel-card">
+                                <div class="card-flip-inner">
+                                    <div class="card-face card-face-front">
+                                        <div class="carousel-card-media media-iskomap">
+                                            <img src="images/iskomap.jpg" alt="IskoMap preview">
+                                        </div>
+                                        <button class="card-info-btn" aria-label="Show project details"><i class="fa-solid fa-circle-info"></i></button>
+                                        <div class="carousel-card-overlay">
+                                            <span class="carousel-card-tag">Completed</span>
+                                            <h3>IskoMap</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-face card-face-back">
+                                        <button class="card-info-btn card-info-btn--back" aria-label="Back to project image"><i class="fa-solid fa-rotate-left"></i></button>
+                                        <h3>IskoMap</h3>
+                                        <p class="card-back-desc">A mobile GIS app for mapping and visualizing the university campus.</p>
+                                        <div class="card-back-tags">
+                                            <span>GIS</span><span>Mobile</span><span>Database</span>
+                                        </div>
+                                        <a href="https://www.figma.com/proto/4MzH4PpYEJwqXOuZKygWN8/Isko-Map?node-id=118-128&p=f&t=P5JqNyJcYvKm4KrA-0&scaling=contain&content-scaling=fixed&page-id=7%3A7&starting-point-node-id=118%3A128&show-proto-sidebar=1" target="_blank" class="card-back-link"><i class="fa-brands fa-figma"></i> View Prototype on Figma</a>
+                                        <a href="#" target="_blank" class="card-back-link"><i class="fa-solid fa-arrow-up-right-from-square"></i>Link Unavailable</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <button class="carousel-arrow carousel-arrow--next" aria-label="Next project"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+
+                    <div class="carousel-dots" id="projects-dots"></div>
+
+                </div>
+            </section>
+            
+            <section id="contact">
+    <div class="contact-top-grid">
+        <div class="contact-left-col">
+            <div class="contact-card-box quote-box">
+            <span class="falling-star" style="top: 10%; left: 20%; animation-delay: 0s;"></span>
+            <span class="falling-star" style="top: 40%; left: 60%; animation-delay: 3s;"></span>
+            <span class="falling-star" style="top: 65%; left: 10%; animation-delay: 6s;"></span>
+
+            <p class="quote-text">"Always down to build something, talk tech, or talk about life."</p>
+            <p class="quote-author">— Andre</p>
+        </div>
+
+            <div class="contact-card-box spotify-box">
+                <p class="box-label">My Favorite Song</p>
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3rPtS4nfpy7PsARctAWpzd?utm_source=generator&theme=0&si=63f4933e3ccf479e" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            
+        </div>
+
+        <div class="contact-card-box note-box">
+            <p class="box-label">Say Hello</p>
+            <form id="note-form">
+                <input type="text" id="note-name" placeholder="Your name" required>
+                <input type="email" id="note-email" placeholder="your@email.com" required>
+                <textarea id="note-message" placeholder="What's on your mind?" required></textarea>
+                <button type="submit" class="note-submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contact-bar">
+        <h2>Reach Out!</h2>
+
+        <div class="contact-grid">
+            <a href="https://www.facebook.com/andren4line" target="_blank" class="contact-card">
+                <i class="fa-brands fa-facebook"></i>
+                <h3>Facebook</h3>
+            </a>
+
+            <a href="https://www.instagram.com/andren4line" target="_blank" class="contact-card">
+                <i class="fa-brands fa-instagram"></i>
+                <h3>Instagram</h3>
+            </a>
+
+            <a href="https://github.com/Rdreii" target="_blank" class="contact-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+            </a>
+
+            <a href="https://www.linkedin.com/in/rondreii/" target="_blank" class="contact-card">
+                <i class="fa-brands fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+            </a>
+
+            <a href="tel:+639295954684" class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+            </a>
+
+            <a href="mailto:ronandre0123@gmail.com" class="contact-card contact-card--primary">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Send Email</h3>
+            </a>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <footer>
+            <p>&copy; Designed and Developed by <span>Ron Andre Bulagao</span> · Site Views <span id="site-views">—</span></p>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
